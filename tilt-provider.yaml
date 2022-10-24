@@ -1,0 +1,12 @@
+name: flux
+config:
+  image: rancher/cluster-api-addon-provider-flux:latest
+  live_reload_deps:
+    - main.go
+    - go.mod
+    - go.sum
+    - api
+    - controllers
+    - internal
+  label: CAAPF
+  manager_name: caapf-controller-manager

@@ -1,0 +1,12 @@
+apiVersion: addons.cluster.x-k8s.io/v1alpha1
+kind: FluxAddon
+metadata:
+  labels:
+    app.kubernetes.io/name: fluxaddon
+    app.kubernetes.io/instance: fluxaddon-sample
+    app.kubernetes.io/part-of: cluster-api-addon-flux
+    app.kuberentes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: cluster-api-addon-flux
+  name: fluxaddon-sample
+spec:
+  # TODO(user): Add fields here
